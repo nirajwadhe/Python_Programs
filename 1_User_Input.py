@@ -11,7 +11,8 @@ def main():
             print(f"Hello {username}, How are you?")    
         else :
             print(len(username)/0)
-    except :    
+    except :  
+        print("Enter a Valid Username - ")  
         main()
 
 # def main():
