@@ -1,5 +1,5 @@
 def main():
-    global list_of_num
+    # global list_of_num
     list_of_num = []
     try :
         number = int(input("Enter a Number - "))
