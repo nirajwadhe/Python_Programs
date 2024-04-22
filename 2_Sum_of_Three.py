@@ -2,12 +2,16 @@ def main():
     # global list_of_num
     list_of_num = []
     try :
-        number = int(input("Enter a Number - "))
-        while number!=0:
-            list_of_num.append(number)
-            number = int(input("Enter a Number -"))
+        number = input("Enter a Number - ")
+        while number!=" ":
+            list_of_num.append(int(number))
+            number = input("Enter a Number - or " " to stop - ")
     except Exception as e:
         print(e)
+
+    if len(list_of_num)<3:
+        print("Enter atleat 3 numbers")
+        main()
     three_sum(list_of_num)
 
 def three_sum(list_num):
